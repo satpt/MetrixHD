@@ -2369,14 +2369,27 @@
 		<!-- template1_2layer -->
 		<screen name="MENUCLOCKWIDGET_screen_pos265_410_size_340_70">
 			<!-- /*ClockWidget-->
-			<eLabel position="265,410" zPosition="-1" size="340,70" backgroundColor="layer-a-background" transparent="0" />
-			<widget source="global.CurrentTime" render="Label" position="415,413" size="190,70" font="global_clock;60" noWrap="1" halign="center" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">
+			<!--satpt init -->
+			<!--<eLabel position="265,410" zPosition="-1" size="340,70" backgroundColor="layer-a-background" transparent="0" />-->
+			
+			<eLabel position="730,400" zPosition="-1" size="340,70" backgroundColor="layer-a-background" transparent="0" />
+			<!--satpt end-->
+			<!--satpt init -->
+			<!--<widget source="global.CurrentTime" render="Label" position="415,413" size="190,70" font="global_clock;60" noWrap="1" halign="center" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">-->
+			<widget source="global.CurrentTime" render="Label" position="880,413" size="190,70" font="global_clock;60" noWrap="1" halign="center" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">
+			<!--satpt end -->		
 				<convert type="ClockToText">Default</convert>
 			</widget>
-			<widget source="global.CurrentTime" render="Label" position="265,444" size="150,30" font="global_clock;20" noWrap="1" halign="right" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">
+			<!--satpt init -->
+			<!--<widget source="global.CurrentTime" render="Label" position="265,444" size="150,30" font="global_clock;20" noWrap="1" halign="right" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">-->
+			<widget source="global.CurrentTime" render="Label" position="730,444" size="150,30" font="global_clock;20" noWrap="1" halign="right" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">
+			<!--satpt end -->
 				<convert type="ClockToText">Format:%e. %B</convert>
 			</widget>
-			<widget source="global.CurrentTime" render="Label" position="265,414" size="150,30" font="global_clock;20" noWrap="1" halign="right" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">
+			<!--satpt init -->
+			<!--<widget source="global.CurrentTime" render="Label" position="265,414" size="150,30" font="global_clock;20" noWrap="1" halign="right" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">-->
+			<widget source="global.CurrentTime" render="Label" position="730,414" size="150,30" font="global_clock;20" noWrap="1" halign="right" foregroundColor="layer-a-clock-foreground" backgroundColor="layer-a-background" transparent="1" valign="bottom">
+			<!--satpt end -->			
 				<convert type="ClockToText">Format:%A</convert>
 			</widget>
 			<!--ClockWidget */-->
@@ -2393,12 +2406,12 @@
 			<widget name="blue" position="849,0" size="170,22" zPosition="1" valign="center" font="global_button;18" halign="left" noWrap="1" foregroundColor="layer-a-button-foreground" backgroundColor="menubackground" transparent="1" />
 		</screen>
 		<screen name="MENU_template-1">
-			<eLabel position="645,51" zPosition="-11" size="482,558" backgroundColor="menubackground" transparent="0" />
-			<eLabel position="264,51" zPosition="-1" size="340,320" backgroundColor="menusymbolbackground" transparent="0" />
-			<widget source="menu" render="Listbox" position="636,60" size="500,540" backgroundColor="menubackground" foregroundColor="menufont" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="menufontselected" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderForegroundColor="scrollbarSlidercolor" scrollbarSliderBorderColor="scrollbarSliderbordercolor" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+			<eLabel position="126,51" zPosition="-11" size="520,558" backgroundColor="menubackground" transparent="0" />
+			<eLabel position="730,51" zPosition="-1" size="340,320" backgroundColor="menusymbolbackground" transparent="0" />
+			<widget source="menu" render="Listbox" position="136,60" size="500,540" backgroundColor="menubackground" foregroundColor="menufont" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="menufontselected" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderForegroundColor="scrollbarSlidercolor" scrollbarSliderBorderColor="scrollbarSliderbordercolor" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 				<convert type="TemplatedMultiContent">
 					{"template": [ MultiContentEntryText(pos = (30, 8), size = (465, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-					"fonts": [gFont("global_menu", 30)],
+					"fonts": [gFont("global_menu", 32)],
 					"itemHeight": 60
 					}
 				</convert>
@@ -2444,12 +2457,21 @@
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
 
+
 		<panel name="MENUCLOCKWIDGET_screen_pos265_410_size_340_70" />
 	</screen>
+	<!--satpt init
 	<screen name="CONTEXTMENU2_template-1">
 		<eLabel position="645,51" zPosition="-11" size="482,558" backgroundColor="menubackground" transparent="0" />
 		<eLabel position="264,51" zPosition="-1" size="340,320" backgroundColor="menusymbolbackground" transparent="0" />
 		<widget name="menu" position="636,60" size="500,540" font="screen_text;20" backgroundColor="menubackground" foregroundColor="menufont" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="menufontselected" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderForegroundColor="scrollbarSlidercolor" scrollbarSliderBorderColor="scrollbarSliderbordercolor" scrollbarMode="showNever" itemHeight="36" enableWrapAround="1" transparent="1" />
+		<panel name="MENUCLOCKWIDGET_screen_pos265_410_size_340_70" />
+	</screen>
+	-->
+		<screen name="CONTEXTMENU2_template-1">
+		<eLabel position="730,51" zPosition="-1" size="340,320" backgroundColor="menubackground" transparent="0" />
+		<eLabel position="126,51" zPosition="-11" size="520,558" backgroundColor="menusymbolbackground" transparent="0" />
+		<widget name="menu" position="136,60" size="500,540" font="screen_text;20" backgroundColor="menubackground" foregroundColor="menufont" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="menufontselected" scrollbarSliderBorderWidth="1" scrollbarWidth="10" scrollbarSliderForegroundColor="scrollbarSlidercolor" scrollbarSliderBorderColor="scrollbarSliderbordercolor" scrollbarMode="showNever" itemHeight="36" enableWrapAround="1" transparent="1" />
 		<panel name="MENUCLOCKWIDGET_screen_pos265_410_size_340_70" />
 	</screen>
 	<!-- CHANNELSELECTION 1 FOCUS LEFT NO PICON 5 NEXT EVENTS */ -->

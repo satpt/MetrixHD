@@ -400,8 +400,8 @@
 	</screen>
 <!-- Infobar, Scondinfobar, Moviebar/Emc Running Text -->
 <!-- Show Menu Buttons -->
-	<screen name="MenuButtons">
+<!-- satpt	<screen name="MenuButtons">
 		<panel name="MenuButtons_template"/>
-	</screen>
+	</screen>-->
 <!-- Menu Buttons -->
 </skin>
